@@ -32,8 +32,7 @@ Font Awesome – Used for icons in the navigation bar
 
 🖼️ Project Preview:-
 
-![Uploading coffeee.png…]()
-
+<img width="1358" height="2128" alt="coffeee" src="https://github.com/user-attachments/assets/8e736ed5-ae15-4c30-958b-00c4ec321fad" />
 
 🚀 How to Run:-
 
