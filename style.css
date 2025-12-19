@@ -1,0 +1,375 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(220, 220, 220); 
+}
+
+.contanier {
+    display: flex;
+    gap: 30px; 
+    justify-content: space-around;
+    padding: 20px;
+    height: 60px;
+    display: flex;
+}
+
+.main{
+    color: #6f4e37;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-size: 25px;
+    color: #6f4e37;
+    display: flex;
+    gap: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.link{
+    color: black;
+} 
+
+hr{
+    background-color: black;
+    color: black;
+}
+
+.hero-1 {
+    background-color: rgb(220, 220, 220); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.box-1 img {
+    height: 500px;
+    width: 100%;
+}
+
+.box-1 {
+    font-size: 25px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-1 button {
+    background-color: #6f4e37;
+    border: 2px solid black;
+    color: white;
+    padding: 20px;
+    font: bold;
+    border-radius: 40px;
+}
+
+.cs{
+    text-align: center;
+    color: #6f4e37;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero{
+    background-color: gainsboro; 
+}
+
+.container1 {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;              
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.card button {
+    padding: 10px 20px;
+    border: none;
+    background: #6f4e37;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section{
+    background-color: gainsboro;
+    padding: 30px 0;
+}
+
+.photo-section {
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 0 20px;
+}
+
+.photo-section h1 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #6f4e37;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.photo {
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.site-footer {
+    background-color: gainsboro;
+    color: black;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-box {
+    flex: 1;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+    color: #6f4e37;
+}
+
+.footer-box h4 {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f4e37;
+}
+
+@media (min-width: 768px) {
+    .contanier {
+        padding: 20px 40px;
+    }
+    
+    .title {
+        gap: 40px;
+    }
+    
+    .hero-1 {
+        padding: 40px 20px;
+    }
+    
+    .container1 {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .card {
+        width: 300px;
+    }
+    
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .footer-container {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contanier {
+        padding: 20px 60px;
+    }
+    
+    .title {
+        gap: 80px;
+    }
+    
+    .container1 {
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    
+    .card {
+        width: 400px;
+    }
+    
+    .photo-section {
+        max-width: 1100px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contanier {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .main h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .title {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .link {
+        text-align: center;
+    }
+    
+    .hero-1 {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    .box-1 {
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    .box-1 img {
+        height: 300px;
+    }
+    
+    .box-1 button {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .card img {
+        height: 300px;
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .photo img {
+        height: 250px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .footer-box {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cs {
+        font-size: 24px;
+    }
+    
+    .box-1 {
+        font-size: 16px;
+    }
+    
+    .box-1 img {
+        height: 250px;
+    }
+    
+    .title {
+        font-size: 18px;
+        gap: 10px;
+    }
+    
+    .card {
+        max-width: 100%;
+        padding: 12px;
+    }
+    
+    .card img {
+        height: 250px;
+    }
+    
+    .photo-section h1 {
+        font-size: 22px;
+    }
+}
